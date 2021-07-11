@@ -283,6 +283,306 @@ units = {
 
 	}
 	
+	division = { # "66 Juntuán"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
+		location = 9843
+		division_template = "Juntuán"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 9843
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 10068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Hainan Jingbei"
+		location = 12068
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_equipment_factor = 0.5
+
+	}
 }
 
 ### STARTING PRODUCTION ###
