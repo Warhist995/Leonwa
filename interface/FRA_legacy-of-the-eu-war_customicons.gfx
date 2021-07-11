@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: Legacy of the EU War
+	SpriteType = { 
+		name = "GFX_idea_FRA_legacy_of_the_eu_war-33623"
+		texturefile = "gfx/interface/ideas/legacy-of-the-eu-war-ideas/FRA_legacy_of_the_eu_war-33623.dds"
+	}
+
+ 
+ }

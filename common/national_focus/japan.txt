@@ -1,0 +1,244 @@
+focus_tree = {
+	id = japan
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	#Establish Puppet Nation
+	focus = {
+		id = JAP_establish_puppet_nation
+		icon = GFX_JAP_establish_puppet_nation-59
+		x = 6
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = JAP_develop_the_republic  }
+	}
+
+	#Build Cabinet
+	focus = {
+		id = JAP_build_cabinet
+		icon = GFX_JAP_build_cabinet-50
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JAP_develop_the_republic  }
+	}
+
+	#Develop the Republic
+	focus = {
+		id = JAP_develop_the_republic
+		icon = GFX_JAP_develop_the_republic-219
+		x = 3
+		y = 0
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Achieve Diplomacy
+	focus = {
+		id = JAP_achieve_diplomacy
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 2
+		y = 3
+		cost = 19
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JAP_build_cabinet  }
+	}
+
+	#Found the Kyoto Pact
+	focus = {
+		id = JAP_found_the_kyoto_pact
+		icon = GFX_goal_tripartite_pact
+		x = 1
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = JAP_achieve_diplomacy  }
+	}
+
+	#Establish Ties with Kerikov
+	focus = {
+		id = JAP_establish_ties_with_kerikov
+		icon = GFX_JAP_establish_ties_with_kerikov-52
+		x = 3
+		y = 5
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = JAP_achieve_diplomacy  }
+	}
+
+	#Ally with PRC
+	focus = {
+		id = JAP_ally_with_prc
+		icon = GFX_focus_chi_one_china_policy
+		x = 8
+		y = 4
+		cost = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JAP_achieve_diplomacy  }
+	}
+
+	#Ally with Thailand
+	focus = {
+		id = JAP_ally_with_thailand
+		icon = GFX_goal_continuous_def_against_influence
+		x = 10
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JAP_achieve_diplomacy  }
+	}
+
+	#Join the Berlin Pact
+	focus = {
+		id = JAP_join_the_berlin_pact
+		icon = GFX_focus_RAJ_seek_help_from_germany
+		x = 10
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = JAP_ally_with_thailand  }
+	}
+
+	#Make Ties with Namazik
+	focus = {
+		id = JAP_make_ties_with_namazik
+		icon = GFX_focus_hol_gateway_to_europe
+		x = 6
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = JAP_achieve_diplomacy  }
+	}
+
+	#Found the SCO
+	focus = {
+		id = JAP_found_the_sco
+		icon = GFX_focus_BUL_bulgaria_on_the_three_seas
+		x = 8
+		y = 5
+		cost = 17
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = JAP_ally_with_prc  }
+	}
+
+	#Build the National Diet
+	focus = {
+		id = JAP_build_the_national_diet
+		icon = GFX_focus_jap_manchurian_project
+		x = 0
+		y = 2
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_USA_CONGRESS
+		}
+		prerequisite = { focus = JAP_build_cabinet  }
+	}
+
+	#Sign the Triple Alliance
+	focus = {
+		id = JAP_sign_the_triple_alliance
+		icon = GFX_goal_generic_major_alliance
+		x = 6
+		y = 5
+		cost = 9
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = JAP_ally_with_prc  } prerequisite = { focus = JAP_make_ties_with_namazik  }
+	}
+
+	#Establish Elections
+	focus = {
+		id = JAP_establish_elections
+		icon = GFX_focus_generic_japanese_imperial_glory
+		x = 5
+		y = 3
+		cost = 18
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = JAP_change_the_head_of_state_to_prime_minister  }
+	}
+
+	#Change the Head of State to Prime Minister
+	focus = {
+		id = JAP_change_the_head_of_state_to_prime_minister
+		icon = GFX_JAP_change_the_head_of_state_to_prime_minister-412
+		x = 5
+		y = 2
+		cost = 15
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = JAP_build_cabinet  }
+	}
+
+	#Establish a 5-Party System
+	focus = {
+		id = JAP_establish_a_5party_system
+		icon = GFX_focus_eng_the_kings_party
+		x = 0
+		y = 3
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = JAP_build_the_national_diet  }
+	}
+
+	#Create the Mitsubishi Bank
+	focus = {
+		id = JAP_create_the_mitsubishi_bank
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 3
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = JAP_build_cabinet  }
+	}
+
+	#Expand Influence
+	focus = {
+		id = JAP_expand_influence
+		icon = GFX_focus_jap_cast_the_die
+		x = 7
+		y = 2
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = JAP_establish_puppet_nation  }
+	}
+
+}

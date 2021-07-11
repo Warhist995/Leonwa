@@ -1,0 +1,59 @@
+﻿capital = 219
+
+oob = "SOV_1936"
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 0
+	fascism = 0
+	communism = 100
+}
+
+create_faction = "Warsaw Pact"
+add_to_faction = SOV
+add_to_faction = PRC
+add_to_faction = MON
+
+
+
+create_country_leader = {
+	name = "Leon Trotsky(Ice Crem)"
+	desc = "-"
+	picture = "Portrait_SOV_Leon_Ice.dds"
+	expire = "1953.3.1"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Konstantin Rodzaevsky"
+	desc = "-"
+	picture = "-"
+	expire = "1953.3.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Alexander Fyodorovich Kerensky"
+	desc = "-"
+	picture = "-"
+	expire = "1953.3.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+

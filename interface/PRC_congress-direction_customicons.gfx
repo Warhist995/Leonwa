@@ -1,0 +1,15 @@
+spriteTypes = { 
+	##Icon For: Revolution
+	SpriteType = { 
+		name = "PRC_revolution-1"
+		texturefile = "gfx/interface/events/congress-direction-event/PRC_revolution-1.dds"
+	}
+
+	##Icon For: Direction of China
+	SpriteType = { 
+		name = "PRC_direction_of_china-33653"
+		texturefile = "gfx/interface/events/congress-direction-event/PRC_direction_of_china-33653.dds"
+	}
+
+ 
+ }

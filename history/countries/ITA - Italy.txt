@@ -1,0 +1,68 @@
+﻿capital = 2
+
+oob = "ITA_1936"
+
+set_research_slots = 4
+set_stability = 0.6
+set_war_support = 0.7
+
+
+
+set_convoys = 200
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1934.3.26"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 10
+	fascism = 10
+	communism = 30
+	neutrality = 50
+}
+
+create_country_leader = {
+	name = "Julius Lustitae"
+	desc = "-"
+	picture = "Portrait_ITA_ROme.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Julius Lustitae"
+	desc = "-"
+	picture = "Portrait_ITA_ROme.dds"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+		
+	}
+}
+
+create_country_leader = {
+	name = "Julius Lustitae"
+	desc = "-"
+	picture = "Portrait_ITA_ROme.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "Heydar Aliyev"
+	desc = "-"
+	picture = "-"
+	expire = "1965.1.1"
+	ideology = stalinism
+	traits = {
+
+	}
+}

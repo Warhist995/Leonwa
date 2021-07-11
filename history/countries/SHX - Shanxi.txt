@@ -1,0 +1,40 @@
+﻿capital = 330
+
+oob = "SHX_1936"
+
+set_stability = 0.7
+set_war_support = 0.4
+
+
+set_politics = {
+	ruling_party = Communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	communism = 100
+}
+
+create_country_leader = {
+	name = "Chairman Nogai"
+	desc = "-"
+	picture = "Portrait_SHX_Nogai.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+create_corps_commander = {
+	name = "Wang Jingguo"
+	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	traits = { politically_connected }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
+}

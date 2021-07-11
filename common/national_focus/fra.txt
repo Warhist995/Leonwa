@@ -1,0 +1,485 @@
+focus_tree = {
+	id = fra
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	#Develop the Republic
+	focus = {
+		id = FRA_develop_the_republic
+		icon = GFX_FRA_develop_the_republic-33347
+		x = 3
+		y = 1
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_manpower = 8000
+			
+			country_event = {
+			days = 1 
+			id = finland.1 
+			}
+			
+		}
+	}
+
+	#Democracy at its Best
+	focus = {
+		id = FRA_democracy_at_its_best
+		icon = GFX_FRA_democracy_at_its_best-33353
+		x = 0
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_develop_the_republic  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			
+			add_political_power = 50
+			
+		}
+	}
+
+	#Develop the EU
+	focus = {
+		id = FRA_develop_the_eu
+		icon = GFX_FRA_develop_the_eu-33354
+		x = 4
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_develop_the_republic  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Enlarge the European
+	focus = {
+		id = FRA_enlarge_the_european
+		icon = GFX_FRA_enlarge_the_european-33355
+		x = 3
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_develop_the_eu  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Develop the OIF
+	focus = {
+		id = FRA_develop_the_oif
+		icon = GFX_FRA_develop_the_oif-33356
+		x = 6
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = FRA_develop_the_republic  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = {
+			 bonus = 0.5 
+			uses = 2 
+			category = radar_tech 
+			}
+			
+		}
+	}
+
+	#Create OIF Schools
+	focus = {
+		id = FRA_create_oif_schools
+		icon = GFX_focus_research
+		x = 7
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = FRA_develop_the_oif  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_research_slot = 1
+			
+		}
+	}
+
+	#Establishing relations with Francia
+	focus = {
+		id = FRA_establishing_relations_with_francia
+		icon = GFX_FRA_establishing_relations_with_francia-33357
+		x = 5
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = FRA_develop_the_eu  } prerequisite = { focus = FRA_develop_the_oif  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Establish Time Travelling
+	focus = {
+		id = FRA_establish_time_travelling
+		icon = GFX_FRA_establish_time_travelling-33359
+		x = 5
+		y = 5
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_establishing_relations_with_francia  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			
+			add_tech_bonus = {
+			 bonus = 0.5 
+			uses = 2 
+			category = radar_tech 
+			}
+			
+		}
+	}
+
+	#Mutual Defence Treaty with ROD
+	focus = {
+		id = FRA_mutual_defence_treaty_with_rod
+		icon = GFX_FRA_mutual_defence_treaty_with_rod-33364
+		x = 3
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_enlarge_the_european  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Finding Allies in Japan
+	focus = {
+		id = FRA_finding_allies_in_japan
+		icon = GFX_goal_generic_alliance
+		x = 3
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_mutual_defence_treaty_with_rod  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Create France TV
+	focus = {
+		id = FRA_create_france_tv
+		icon = GFX_goal_generic_radar
+		x = 0
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = FRA_democracy_at_its_best  }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = {
+			 bonus = 0.5 
+			uses = 2 
+			category = radar_tech 
+			}
+			add_political_power = 100
+			
+		}
+	}
+
+	#Expand France TV
+	focus = {
+		id = FRA_expand_france_tv
+		icon = GFX_goal_generic_propaganda
+		x = 0
+		y = 4
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = FRA_create_france_tv  }
+		completion_reward = {
+			add_building_construction = { 
+			type = bunker 
+			province = 5291 
+			level = 2 
+			instant_build = yes }
+			
+		}
+	}
+
+	#Centralized Economy
+	focus = {
+		id = FRA_centralized_economy
+		icon = GFX_focus_generic_soviet_politics
+		x = 11
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = FRA_swinging_to_the_communists  }
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 1 }
+			
+		}
+	}
+
+	#Decentralised Economy
+	focus = {
+		id = FRA_decentralised_economy
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 9
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_siding_with_syndicalism  }
+		available = {
+			
+			
+		}
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+
+	#Independent Socialism
+	focus = {
+		id = FRA_independent_socialism
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		x = 11
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_anti_fascist_front  } prerequisite = { focus = FRA_socialist_construction  }
+		mutually_exclusive = { focus = FRA_leonist_alignment  }
+	}
+
+	#Revolution Once and Forever
+	focus = {
+		id = FRA_revolution_once_and_forever
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		x = 10
+		y = 6
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			available = {
+			  has_country_flag = revolution
+			}
+			
+		}
+	}
+
+	#Siding With Syndicalism
+	focus = {
+		id = FRA_siding_with_syndicalism
+		icon = GFX_FRA_siding_with_syndicalism-34382
+		x = 8
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_revolution_once_and_forever  }
+		mutually_exclusive = { focus = FRA_swinging_to_the_communists  }
+	}
+
+	#Swinging to the Communists
+	focus = {
+		id = FRA_swinging_to_the_communists
+		icon = GFX_FRA_swinging_to_the_communists-34384
+		x = 12
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_revolution_once_and_forever  }
+		mutually_exclusive = { focus = FRA_siding_with_syndicalism  }
+	}
+
+	#Federation Democracy
+	focus = {
+		id = FRA_federation_democracy
+		icon = GFX_FRA_federation_democracy-34389
+		x = 7
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_siding_with_syndicalism  }
+		completion_reward = {
+			hold_election = yes
+			
+		}
+	}
+
+	#True Marxism
+	focus = {
+		id = FRA_true_marxism
+		icon = GFX_FRA_true_marxism-34390
+		x = 13
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_swinging_to_the_communists  }
+		completion_reward = {
+			add_stability = -0.05
+			
+			political_power_daily > 1.5
+			
+		}
+	}
+
+	#Allow Liberalism
+	focus = {
+		id = FRA_allow_liberalism
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 7
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_federation_democracy  }
+		completion_reward = {
+			add_popularity = { 
+			ideology = democratic 
+			popularity = 0.1 
+			}
+			add_popularity = { 
+			ideology =neutrality
+			popularity = 0.1 
+			}
+			
+		}
+	}
+
+	#Communal Research
+	focus = {
+		id = FRA_communal_research
+		icon = GFX_goal_continuous_research
+		x = 9
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = FRA_decentralised_economy  }
+		completion_reward = {
+			add_research_slot = 1
+			
+		}
+	}
+
+	#Anti Fascist Front
+	focus = {
+		id = FRA_anti_fascist_front
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 13
+		y = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_true_marxism  }
+		completion_reward = {
+			add_popularity = { 
+			ideology = fascism 
+			popularity = -0.4 
+			}
+			
+		}
+	}
+
+	#Socialist Construction
+	focus = {
+		id = FRA_socialist_construction
+		icon = GFX_FRA_socialist_construction-424
+		x = 11
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = FRA_centralized_economy  }
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 3 }
+			
+		}
+	}
+
+	#Siding With Leon
+	focus = {
+		id = FRA_siding_with_leon
+		icon = GFX_FRA_siding_with_leon-52
+		x = 9
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_allow_liberalism  } prerequisite = { focus = FRA_communal_research  }
+		mutually_exclusive = { focus = FRA_our_own_way  }
+	}
+
+	#Our Own Way
+	focus = {
+		id = FRA_our_own_way
+		icon = GFX_focus_generic_socialist_science
+		x = 7
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_allow_liberalism  } prerequisite = { focus = FRA_communal_research  }
+		mutually_exclusive = { focus = FRA_siding_with_leon  }
+		completion_reward = {
+			create_faction = 'Syndical Nationale'
+			
+		}
+	}
+
+	#Leonist Alignment
+	focus = {
+		id = FRA_leonist_alignment
+		icon = GFX_FRA_leonist_alignment-52
+		x = 13
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_anti_fascist_front  } prerequisite = { focus = FRA_socialist_construction  }
+		mutually_exclusive = { focus = FRA_independent_socialism  }
+	}
+
+}

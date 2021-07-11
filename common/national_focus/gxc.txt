@@ -1,0 +1,475 @@
+focus_tree = {
+	id = gxc
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GXC
+		}
+	}
+	#Proclaiming the UCSC
+	focus = {
+		id = GXC_proclaiming_the_ucsc
+		icon = GFX_GXC_proclaiming_the_ucsc-33644
+		x = 5
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 5
+			
+		}
+	}
+
+	#Improving Soviet Relations
+	focus = {
+		id = GXC_improving_soviet_relations
+		icon = GFX_GXC_improving_soviet_relations-52
+		x = 5
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_proclaiming_the_ucsc  }
+		completion_reward = {
+			diplomatic_relation = { 
+			country = SOV 
+			relation = non_aggression_pact 
+			}
+			
+		}
+	}
+
+	#The East is Red
+	focus = {
+		id = GXC_the_east_is_red
+		icon = GFX_focus_chi_one_china_policy
+		x = 5
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_improving_soviet_relations  }
+		completion_reward = {
+			add_manpower = 100000
+			
+		}
+	}
+
+	#Open Up the Party Congress
+	focus = {
+		id = GXC_open_up_the_party_congress
+		icon = GFX_GXC_open_up_the_party_congress-33645
+		x = 5
+		y = 3
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_the_east_is_red  }
+		ai_will_do = { factor = 1 }
+	}
+
+	#Same old Same Old
+	focus = {
+		id = GXC_same_old_same_old
+		icon = GFX_GXC_same_old_same_old-33653
+		x = 3
+		y = 4
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_open_up_the_party_congress  }
+	}
+
+	#The Way of Chairman Mao
+	focus = {
+		id = GXC_the_way_of_chairman_mao
+		icon = GFX_GXC_the_way_of_chairman_mao-33656
+		x = 7
+		y = 4
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_open_up_the_party_congress  }
+		mutually_exclusive = { focus = GXC_same_old_same_old  }
+	}
+
+	#Loyalty to Leon
+	focus = {
+		id = GXC_loyalty_to_leon
+		icon = GFX_GXC_loyalty_to_leon-52
+		x = 4
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GXC_same_old_same_old  }
+		completion_reward = {
+			diplomatic_relation = { 
+			country = SOV 
+			relation = non_aggression_pact 
+			}
+			
+		}
+	}
+
+	#Sino Soviet Split
+	focus = {
+		id = GXC_sino_soviet_split
+		icon = GFX_GXC_sino_soviet_split-33993
+		x = 8
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_the_way_of_chairman_mao  }
+		completion_reward = {
+			leave_faction = PRC
+			
+		}
+	}
+
+	#First Cultural Revolution Plan
+	focus = {
+		id = GXC_first_cultural_revolution_plan
+		icon = GFX_GXC_first_cultural_revolution_plan-33860
+		x = 2
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_same_old_same_old  }
+		completion_reward = {
+			add_building_construction = { 
+			type = military_factory 
+			province = 5291 
+			level = 2 
+			instant_build = yes }
+			
+		}
+	}
+
+	#Second Plan for the Cultural revolution
+	focus = {
+		id = GXC_second_plan_for_the_cultural_revolution
+		icon = GFX_GXC_second_plan_for_the_cultural_revolution-33869
+		x = 2
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GXC_first_cultural_revolution_plan  }
+		completion_reward = {
+			add_tech_bonus = {
+			 bonus = 0.5 
+			uses = 2 
+			category = infantry_equipment_tech 
+			}
+			
+		}
+	}
+
+	#Start the 100 Flowers Campaign
+	focus = {
+		id = GXC_start_the_100_flowers_campaign
+		icon = GFX_GXC_start_the_100_flowers_campaign-33873
+		x = 6
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_the_way_of_chairman_mao  }
+		completion_reward = {
+			add_building_construction = { 
+			type = military_factory
+			province = 5291 
+			level = 2 
+			instant_build = yes }
+			
+		}
+	}
+
+	#Let Fourth the Great Proletarian Cultural Revolution
+	focus = {
+		id = GXC_let_fourth_the_great_proletarian_cultural_revolution
+		icon = GFX_GXC_let_fourth_the_great_proletarian_cultural_revolution-33973
+		x = 6
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_start_the_100_flowers_campaign  }
+		completion_reward = {
+			country_event = {
+			days = 1 
+			id = finland.1 
+			}
+			
+		}
+	}
+
+	#Formation of the Red Guards
+	focus = {
+		id = GXC_formation_of_the_red_guards
+		icon = GFX_GXC_formation_of_the_red_guards-33881
+		x = 8
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GXC_sino_soviet_split  }
+		completion_reward = {
+			add_stability = -0.15
+			add_manpower = 2000000
+			
+			
+		}
+	}
+
+	#Politburo Meeting 5
+	focus = {
+		id = GXC_politburo_meeting_5
+		icon = GFX_GXC_politburo_meeting_5-33998
+		x = 11
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+		completion_reward = {
+			
+			
+		}
+	}
+
+	#Follow Stalin
+	focus = {
+		id = GXC_follow_stalin
+		icon = GFX_GXC_follow_stalin-94
+		x = 11
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_politburo_meeting_5  } 
+		mutually_exclusive = { focus = GXC_kerikov_comes_back  }
+		completion_reward = {
+			diplomatic_relation = { 
+			country = MON 
+			relation = non_aggression_pact 
+			}
+			
+		}
+	}
+
+	#Kerikov Comes Back
+	focus = {
+		id = GXC_kerikov_comes_back
+		icon = GFX_GXC_kerikov_comes_back-426
+		x = 13
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_politburo_meeting_5  }
+		mutually_exclusive = { focus = GXC_follow_stalin  } mutually_exclusive = { focus = GXC_neutrality_maintained  }
+		available = {
+			
+			    SOV = { 
+			      has_country_leader = {
+			        name = "Bragov"
+			        ruling_only = yes
+			      }
+			    
+		}
+		completion_reward = {
+			
+			
+			
+			
+			diplomatic_relation = { 
+			country = SOV 
+			relation = non_aggression_pact 
+			}
+			
+		}
+	}
+
+	#Neutrality Maintained
+	focus = {
+		id = GXC_neutrality_maintained
+		icon = GFX_goal_continuous_boost_freedom
+		x = 10
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_politburo_meeting_5  }
+		mutually_exclusive = { focus = GXC_follow_stalin  } mutually_exclusive = { focus = GXC_kerikov_comes_back  }
+		completion_reward = {
+			add_stability = 0.45
+			add_manpower = -10000
+			
+		}
+	}
+
+	#Side Against Auth
+	focus = {
+		id = GXC_side_against_auth
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 4
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_loyalty_to_leon  }
+	}
+
+	#Crushing Revisionists
+	focus = {
+		id = GXC_crushing_revisionists
+		icon = GFX_GXC_crushing_revisionists-298
+		x = 4
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_side_against_auth  }
+		completion_reward = {
+			create_wargoal = { 
+			type = annex_everything 
+			target = YUG
+			}
+			
+		}
+	}
+
+	#Attack Revisionism
+	focus = {
+		id = GXC_attack_revisionism
+		icon = GFX_GXC_attack_revisionism-298
+		x = 13
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_kerikov_comes_back  }
+		completion_reward = {
+			create_wargoal = { 
+			type = annex_everything 
+			target = ENG
+			}
+			
+		}
+	}
+
+	#World Revolution
+	focus = {
+		id = GXC_world_revolution
+		icon = GFX_focus_por_workers_of_iberia
+		x = 11
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_follow_stalin  }
+		completion_reward = {
+			add_war_support = 40
+			
+		}
+	}
+
+	#Found SCO
+	focus = {
+		id = GXC_found_sco
+		icon = GFX_focus_eng_crush_the_dream
+		x = 9
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_neutrality_maintained  }
+	}
+
+	#Purging Spies
+	focus = {
+		id = GXC_purging_spies
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 2
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_second_plan_for_the_cultural_revolution  }
+		completion_reward = {
+			add_stability = -0.1
+			add_manpower = -18000
+			
+		}
+	}
+
+	#Flying the Banner of the People's Republic
+	focus = {
+		id = GXC_flying_the_banner_of_the_peoples_republic
+		icon = GFX_focus_prc_proclaim_the_peoples_republic
+		x = 6
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_let_fourth_the_great_proletarian_cultural_revolution  }
+		completion_reward = {
+			add_political_power = 100
+			
+		}
+	}
+
+	#Embracing Mao Zedong Thought
+	focus = {
+		id = GXC_embracing_mao_zedong_thought
+		icon = GFX_focus_prc_maoism
+		x = 8
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GXC_formation_of_the_red_guards  }
+		completion_reward = {
+			add_tech_bonus = {
+			 bonus = 0.5 
+			uses = 2 
+			category = radar_tech 
+			}
+			
+		}
+	}
+
+}
