@@ -1,0 +1,231 @@
+focus_tree = {
+	id = sov
+	continuous_focus_position = { x = 0 y = 1000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	#New Administration
+	focus = {
+		id = SOV_new_administration
+		icon = GFX_goal_anschluss
+		x = 3
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_population_explosion  }
+	}
+
+	#Form the Red Army
+	focus = {
+		id = SOV_form_the_red_army
+		icon = GFX_SOV_form_the_red_army-40063
+		x = 6
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SOV_rise_of_moscow  }
+	}
+
+	#Finish the First 2 Month Plan
+	focus = {
+		id = SOV_finish_the_first_2_month_plan
+		icon = GFX_focus_eng_crush_the_dream
+		x = 2
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_new_age_technology  } prerequisite = { focus = SOV_new_administration  }
+	}
+
+	#Shadow Defense Plan
+	focus = {
+		id = SOV_shadow_defense_plan
+		icon = GFX_goal_generic_fortify_city
+		x = 5
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SOV_form_the_red_army  }
+	}
+
+	#Rise of Moscow
+	focus = {
+		id = SOV_rise_of_moscow
+		icon = GFX_SOV_rise_of_moscow-144
+		x = 4
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#First 2 Month Plan
+	focus = {
+		id = SOV_first_2_month_plan
+		icon = GFX_SOV_first_2_month_plan-424
+		x = 2
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_rise_of_moscow  }
+	}
+
+	#Establish the Ruble
+	focus = {
+		id = SOV_establish_the_ruble
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_first_2_month_plan  }
+	}
+
+	#Expansion into Siberia
+	focus = {
+		id = SOV_expansion_into_siberia
+		icon = GFX_SOV_expansion_into_siberia-40736
+		x = 3
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_first_2_month_plan  }
+	}
+
+	#Population Explosion
+	focus = {
+		id = SOV_population_explosion
+		icon = GFX_focus_generic_industry_3
+		x = 3
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_expansion_into_siberia  }
+	}
+
+	#Push to the Top
+	focus = {
+		id = SOV_push_to_the_top
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 1
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_establish_the_ruble  }
+	}
+
+	#New Age Technology
+	focus = {
+		id = SOV_new_age_technology
+		icon = GFX_focus_generic_socialist_science
+		x = 1
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SOV_push_to_the_top  }
+	}
+
+	#Create the NKVD
+	focus = {
+		id = SOV_create_the_nkvd
+		icon = GFX_SOV_create_the_nkvd-341
+		x = 7
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SOV_form_the_red_army  }
+	}
+
+	#Purge of the 17th
+	focus = {
+		id = SOV_purge_of_the_17th
+		icon = GFX_SOV_purge_of_the_17th-40086
+		x = 7
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SOV_create_the_nkvd  }
+	}
+
+	#Organize the Military
+	focus = {
+		id = SOV_organize_the_military
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 5
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SOV_shadow_defense_plan  }
+	}
+
+	#The State is Great
+	focus = {
+		id = SOV_the_state_is_great
+		icon = GFX_focus_por_workers_of_iberia
+		x = 7
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SOV_purge_of_the_17th  }
+	}
+
+	#Effective Conscription
+	focus = {
+		id = SOV_effective_conscription
+		icon = GFX_SOV_effective_conscription-40062
+		x = 5
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SOV_organize_the_military  }
+	}
+
+	#Legacy of Victory
+	focus = {
+		id = SOV_legacy_of_victory
+		icon = GFX_SOV_legacy_of_victory-39893
+		x = 6
+		y = 5
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SOV_effective_conscription  } prerequisite = { focus = SOV_the_state_is_great  }
+	}
+
+}
