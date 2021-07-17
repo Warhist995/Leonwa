@@ -1,6 +1,6 @@
 focus_tree = {
 	id = gxc
-	continuous_focus_position = { x = 0 y = 1000 } 
+	continuous_focus_position = { x = 0 y = 2000 } 
 	country = {
 		factor = 0
 		modifier = {
@@ -8,11 +8,11 @@ focus_tree = {
 			tag = GXC
 		}
 	}
-	#Proclaiming the UCSC
+	#China's Red Banner
 	focus = {
-		id = GXC_proclaiming_the_ucsc
-		icon = GFX_GXC_proclaiming_the_ucsc-33644
-		x = 5
+		id = GXC_chinas_red_banner
+		icon = GFX_GXC_chinas_red_banner-42107
+		x = 8
 		y = 0
 		cost = 1
 		search_filters = {
@@ -20,8 +20,7 @@ focus_tree = {
 		}
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 5
+			
 			
 		}
 	}
@@ -30,13 +29,13 @@ focus_tree = {
 	focus = {
 		id = GXC_improving_soviet_relations
 		icon = GFX_GXC_improving_soviet_relations-52
-		x = 5
+		x = 8
 		y = 1
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = GXC_proclaiming_the_ucsc  }
+		prerequisite = { focus = GXC_chinas_red_banner  }
 		completion_reward = {
 			diplomatic_relation = { 
 			country = SOV 
@@ -50,7 +49,7 @@ focus_tree = {
 	focus = {
 		id = GXC_the_east_is_red
 		icon = GFX_focus_chi_one_china_policy
-		x = 5
+		x = 8
 		y = 2
 		cost = 10
 		search_filters = {
@@ -67,7 +66,7 @@ focus_tree = {
 	focus = {
 		id = GXC_open_up_the_party_congress
 		icon = GFX_GXC_open_up_the_party_congress-33645
-		x = 5
+		x = 8
 		y = 3
 		cost = 7
 		search_filters = {
@@ -81,20 +80,21 @@ focus_tree = {
 	focus = {
 		id = GXC_same_old_same_old
 		icon = GFX_GXC_same_old_same_old-33653
-		x = 3
+		x = 4
 		y = 4
 		cost = 1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = GXC_open_up_the_party_congress  }
+		mutually_exclusive = { focus = GXC_the_way_of_chairman_mao  }
 	}
 
 	#The Way of Chairman Mao
 	focus = {
 		id = GXC_the_way_of_chairman_mao
-		icon = GFX_GXC_the_way_of_chairman_mao-33656
-		x = 7
+		icon = GFX_GXC_the_way_of_chairman_mao-37371
+		x = 12
 		y = 4
 		cost = 1
 		search_filters = {
@@ -102,13 +102,27 @@ focus_tree = {
 		}
 		prerequisite = { focus = GXC_open_up_the_party_congress  }
 		mutually_exclusive = { focus = GXC_same_old_same_old  }
+		completion_reward = {
+		add_stability = 0.05
+		retire_country_leader = yes
+				create_country_leader = {
+					name = "Chairman Mao"
+					desc = "-"
+					picture = "-"
+					expire = "1965.1.1"
+					ideology = leninism
+					traits = {
+						
+					}
+				}
+			}
 	}
 
 	#Loyalty to Leon
 	focus = {
 		id = GXC_loyalty_to_leon
 		icon = GFX_GXC_loyalty_to_leon-52
-		x = 4
+		x = 5
 		y = 5
 		cost = 10
 		search_filters = {
@@ -128,7 +142,7 @@ focus_tree = {
 	focus = {
 		id = GXC_sino_soviet_split
 		icon = GFX_GXC_sino_soviet_split-33993
-		x = 8
+		x = 13
 		y = 5
 		cost = 10
 		search_filters = {
@@ -136,7 +150,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GXC_the_way_of_chairman_mao  }
 		completion_reward = {
-			leave_faction = PRC
+			leave_faction = SOV
 			
 		}
 	}
@@ -145,7 +159,7 @@ focus_tree = {
 	focus = {
 		id = GXC_first_cultural_revolution_plan
 		icon = GFX_GXC_first_cultural_revolution_plan-33860
-		x = 2
+		x = 3
 		y = 5
 		cost = 10
 		search_filters = {
@@ -153,12 +167,57 @@ focus_tree = {
 		}
 		prerequisite = { focus = GXC_same_old_same_old  }
 		completion_reward = {
-			add_building_construction = { 
-			type = military_factory 
-			province = 5291 
-			level = 2 
-			instant_build = yes }
-			
+		random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
 		}
 	}
 
@@ -166,7 +225,7 @@ focus_tree = {
 	focus = {
 		id = GXC_second_plan_for_the_cultural_revolution
 		icon = GFX_GXC_second_plan_for_the_cultural_revolution-33869
-		x = 2
+		x = 3
 		y = 6
 		cost = 10
 		search_filters = {
@@ -174,11 +233,54 @@ focus_tree = {
 		}
 		prerequisite = { focus = GXC_first_cultural_revolution_plan  }
 		completion_reward = {
-			add_tech_bonus = {
-			 bonus = 0.5 
-			uses = 2 
-			category = infantry_equipment_tech 
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_support_domestic_industry_IC
 			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_support_domestic_industry_IC
+			}			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_support_domestic_industry_IC
+			}
+			
 			
 		}
 	}
@@ -187,7 +289,7 @@ focus_tree = {
 	focus = {
 		id = GXC_start_the_100_flowers_campaign
 		icon = GFX_GXC_start_the_100_flowers_campaign-33873
-		x = 6
+		x = 11
 		y = 5
 		cost = 10
 		search_filters = {
@@ -195,11 +297,56 @@ focus_tree = {
 		}
 		prerequisite = { focus = GXC_the_way_of_chairman_mao  }
 		completion_reward = {
-			add_building_construction = { 
-			type = military_factory
-			province = 5291 
-			level = 2 
-			instant_build = yes }
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_support_domestic_industry_IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_support_domestic_industry_IC
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = HUN_support_domestic_industry_IC
+			}
+			
+
 			
 		}
 	}
@@ -208,13 +355,102 @@ focus_tree = {
 	focus = {
 		id = GXC_let_fourth_the_great_proletarian_cultural_revolution
 		icon = GFX_GXC_let_fourth_the_great_proletarian_cultural_revolution-33973
-		x = 6
+		x = 11
 		y = 6
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = GXC_start_the_100_flowers_campaign  }
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
+		}
+	}
+
+	#Formation of the Red Guards
+	focus = {
+		id = GXC_formation_of_the_red_guards
+		icon = GFX_GXC_formation_of_the_red_guards-33881
+		x = 13
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GXC_sino_soviet_split  }
+		completion_reward = {
+			add_stability = -0.15
+			add_manpower = 2000000
+			
+			
+		}
+	}
+
+	#Politburo Meeting 5
+	focus = {
+		id = GXC_politburo_meeting_5
+		available = {
+			is_subject = no
+			NOT = { is_in_faction_with = SOV }
+		}
+		icon = GFX_GXC_politburo_meeting_5-33998
+		x = 8
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GXC_open_up_the_party_congress  }
 		completion_reward = {
 			country_event = {
 			days = 1 
@@ -224,93 +460,23 @@ focus_tree = {
 		}
 	}
 
-	#Formation of the Red Guards
-	focus = {
-		id = GXC_formation_of_the_red_guards
-		icon = GFX_GXC_formation_of_the_red_guards-33881
-		x = 8
-		y = 6
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_STABILITY
-		}
-		prerequisite = { focus = GXC_sino_soviet_split  }
-		completion_reward = {
-			add_stability = -0.15
-			add_manpower = 2000000
-			
-			
-		}
-	}
-
-	#Politburo Meeting 5
-	focus = {
-		id = GXC_politburo_meeting_5
-		icon = GFX_GXC_politburo_meeting_5-33998
-		x = 11
-		y = 1
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		
-		completion_reward = {
-			
-			
-		}
-	}
-
 	#Follow Stalin
 	focus = {
 		id = GXC_follow_stalin
 		icon = GFX_GXC_follow_stalin-94
-		x = 11
-		y = 2
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = GXC_politburo_meeting_5  } 
-		mutually_exclusive = { focus = GXC_kerikov_comes_back  }
-		completion_reward = {
-			diplomatic_relation = { 
-			country = MON 
-			relation = non_aggression_pact 
-			}
-			
-		}
-	}
-
-	#Kerikov Comes Back
-	focus = {
-		id = GXC_kerikov_comes_back
-		icon = GFX_GXC_kerikov_comes_back-426
-		x = 13
-		y = 2
+		x = 9
+		y = 6
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = GXC_politburo_meeting_5  }
-		mutually_exclusive = { focus = GXC_follow_stalin  } mutually_exclusive = { focus = GXC_neutrality_maintained  }
-		available = {
-			
-			    SOV = { 
-			      has_country_leader = {
-			        name = "Bragov"
-			        ruling_only = yes
-			      }
-			    
-		}
+		mutually_exclusive = { focus = GXC_neutrality_maintained  }
 		completion_reward = {
-			
-			
-			
-			
-			diplomatic_relation = { 
-			country = SOV 
-			relation = non_aggression_pact 
-			}
+			diplomatic_relation = { 
+			country = MON 
+			relation = non_aggression_pact 
+			}
 			
 		}
 	}
@@ -319,14 +485,14 @@ focus_tree = {
 	focus = {
 		id = GXC_neutrality_maintained
 		icon = GFX_goal_continuous_boost_freedom
-		x = 10
-		y = 2
+		x = 7
+		y = 6
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = GXC_politburo_meeting_5  }
-		mutually_exclusive = { focus = GXC_follow_stalin  } mutually_exclusive = { focus = GXC_kerikov_comes_back  }
+		mutually_exclusive = { focus = GXC_follow_stalin  } mutually_exclusive = { }
 		completion_reward = {
 			add_stability = 0.45
 			add_manpower = -10000
@@ -338,8 +504,8 @@ focus_tree = {
 	focus = {
 		id = GXC_side_against_auth
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = 4
-		y = 7
+		x = 5
+		y = 6
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -351,8 +517,8 @@ focus_tree = {
 	focus = {
 		id = GXC_crushing_revisionists
 		icon = GFX_GXC_crushing_revisionists-298
-		x = 4
-		y = 8
+		x = 5
+		y = 7
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -367,32 +533,12 @@ focus_tree = {
 		}
 	}
 
-	#Attack Revisionism
-	focus = {
-		id = GXC_attack_revisionism
-		icon = GFX_GXC_attack_revisionism-298
-		x = 13
-		y = 9
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = GXC_kerikov_comes_back  }
-		completion_reward = {
-			create_wargoal = { 
-			type = annex_everything 
-			target = ENG
-			}
-			
-		}
-	}
-
 	#World Revolution
 	focus = {
 		id = GXC_world_revolution
 		icon = GFX_focus_por_workers_of_iberia
-		x = 11
-		y = 9
+		x = 9
+		y = 7
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -408,21 +554,25 @@ focus_tree = {
 	focus = {
 		id = GXC_found_sco
 		icon = GFX_focus_eng_crush_the_dream
-		x = 9
-		y = 9
+		x = 7
+		y = 7
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = GXC_neutrality_maintained  }
+		completion_reward = {
+			create_faction = "Shanghai Cooperation Organisation"
+			
+		}
 	}
 
 	#Purging Spies
 	focus = {
 		id = GXC_purging_spies
 		icon = GFX_focus_focus_fra_fascist_threat
-		x = 2
-		y = 9
+		x = 3
+		y = 7
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -439,7 +589,7 @@ focus_tree = {
 	focus = {
 		id = GXC_flying_the_banner_of_the_peoples_republic
 		icon = GFX_focus_prc_proclaim_the_peoples_republic
-		x = 6
+		x = 11
 		y = 7
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -455,7 +605,7 @@ focus_tree = {
 	focus = {
 		id = GXC_embracing_mao_zedong_thought
 		icon = GFX_focus_prc_maoism
-		x = 8
+		x = 13
 		y = 7
 		cost = 10
 		search_filters = {

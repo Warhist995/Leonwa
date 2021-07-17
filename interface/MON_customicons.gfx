@@ -1,16 +1,16 @@
 spriteTypes = {	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_chinas_red_banner-42107"
-		texturefile = "gfx/interface/goals/GFX_GXC_chinas_red_banner-42107.dds"
+		name = "GFX_MON_glory_to_the_generalissimus-94"
+		texturefile = "gfx/interface/goals/GFX_MON_glory_to_the_generalissimus-94.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_chinas_red_banner-42107_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_chinas_red_banner-42107.dds"
+		name = "GFX_MON_glory_to_the_generalissimus-94_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_glory_to_the_generalissimus-94.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_chinas_red_banner-42107.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_glory_to_the_generalissimus-94.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -22,7 +22,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_chinas_red_banner-42107.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_glory_to_the_generalissimus-94.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -38,17 +38,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_improving_soviet_relations-52"
-		texturefile = "gfx/interface/goals/GFX_GXC_improving_soviet_relations-52.dds"
+		name = "GFX_MON_forming_the_wla-42168"
+		texturefile = "gfx/interface/goals/GFX_MON_forming_the_wla-42168.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_improving_soviet_relations-52_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_improving_soviet_relations-52.dds"
+		name = "GFX_MON_forming_the_wla-42168_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_forming_the_wla-42168.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_improving_soviet_relations-52.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_forming_the_wla-42168.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -60,7 +60,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_improving_soviet_relations-52.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_forming_the_wla-42168.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -76,17 +76,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_open_up_the_party_congress-33645"
-		texturefile = "gfx/interface/goals/GFX_GXC_open_up_the_party_congress-33645.dds"
+		name = "GFX_MON_our_influence_abroad-42164"
+		texturefile = "gfx/interface/goals/GFX_MON_our_influence_abroad-42164.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_open_up_the_party_congress-33645_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_open_up_the_party_congress-33645.dds"
+		name = "GFX_MON_our_influence_abroad-42164_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_our_influence_abroad-42164.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_open_up_the_party_congress-33645.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_our_influence_abroad-42164.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -98,7 +98,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_open_up_the_party_congress-33645.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_our_influence_abroad-42164.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -114,17 +114,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_same_old_same_old-33653"
-		texturefile = "gfx/interface/goals/GFX_GXC_same_old_same_old-33653.dds"
+		name = "GFX_MON_nuclear_development_program-422"
+		texturefile = "gfx/interface/goals/GFX_MON_nuclear_development_program-422.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_same_old_same_old-33653_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_same_old_same_old-33653.dds"
+		name = "GFX_MON_nuclear_development_program-422_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_nuclear_development_program-422.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_same_old_same_old-33653.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_nuclear_development_program-422.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -136,7 +136,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_same_old_same_old-33653.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_nuclear_development_program-422.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -152,17 +152,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_the_way_of_chairman_mao-37371"
-		texturefile = "gfx/interface/goals/GFX_GXC_the_way_of_chairman_mao-37371.dds"
+		name = "GFX_MON_forming_the_proletarian_alliance-42155"
+		texturefile = "gfx/interface/goals/GFX_MON_forming_the_proletarian_alliance-42155.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_the_way_of_chairman_mao-37371_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_the_way_of_chairman_mao-37371.dds"
+		name = "GFX_MON_forming_the_proletarian_alliance-42155_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_forming_the_proletarian_alliance-42155.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_the_way_of_chairman_mao-37371.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_forming_the_proletarian_alliance-42155.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -174,7 +174,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_the_way_of_chairman_mao-37371.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_forming_the_proletarian_alliance-42155.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -190,17 +190,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_loyalty_to_leon-52"
-		texturefile = "gfx/interface/goals/GFX_GXC_loyalty_to_leon-52.dds"
+		name = "GFX_MON_joining_the_warsaw_pact-42166"
+		texturefile = "gfx/interface/goals/GFX_MON_joining_the_warsaw_pact-42166.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_loyalty_to_leon-52_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_loyalty_to_leon-52.dds"
+		name = "GFX_MON_joining_the_warsaw_pact-42166_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_joining_the_warsaw_pact-42166.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_loyalty_to_leon-52.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_joining_the_warsaw_pact-42166.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -212,7 +212,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_loyalty_to_leon-52.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_joining_the_warsaw_pact-42166.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -228,17 +228,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_sino_soviet_split-33993"
-		texturefile = "gfx/interface/goals/GFX_GXC_sino_soviet_split-33993.dds"
+		name = "GFX_MON_the_great_purge_of_gramscites-40086"
+		texturefile = "gfx/interface/goals/GFX_MON_the_great_purge_of_gramscites-40086.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_sino_soviet_split-33993_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_sino_soviet_split-33993.dds"
+		name = "GFX_MON_the_great_purge_of_gramscites-40086_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_the_great_purge_of_gramscites-40086.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_sino_soviet_split-33993.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_the_great_purge_of_gramscites-40086.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -250,7 +250,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_sino_soviet_split-33993.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_the_great_purge_of_gramscites-40086.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -266,17 +266,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_first_cultural_revolution_plan-33860"
-		texturefile = "gfx/interface/goals/GFX_GXC_first_cultural_revolution_plan-33860.dds"
+		name = "GFX_MON_criticism_morsoc-42165"
+		texturefile = "gfx/interface/goals/GFX_MON_criticism_morsoc-42165.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_first_cultural_revolution_plan-33860_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_first_cultural_revolution_plan-33860.dds"
+		name = "GFX_MON_criticism_morsoc-42165_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_criticism_morsoc-42165.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_first_cultural_revolution_plan-33860.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_criticism_morsoc-42165.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -288,7 +288,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_first_cultural_revolution_plan-33860.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_criticism_morsoc-42165.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -304,17 +304,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_second_plan_for_the_cultural_revolution-33869"
-		texturefile = "gfx/interface/goals/GFX_GXC_second_plan_for_the_cultural_revolution-33869.dds"
+		name = "GFX_MON_grand_victory-39893"
+		texturefile = "gfx/interface/goals/GFX_MON_grand_victory-39893.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_second_plan_for_the_cultural_revolution-33869_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_second_plan_for_the_cultural_revolution-33869.dds"
+		name = "GFX_MON_grand_victory-39893_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_grand_victory-39893.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_second_plan_for_the_cultural_revolution-33869.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_grand_victory-39893.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -326,7 +326,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_second_plan_for_the_cultural_revolution-33869.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_grand_victory-39893.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -342,17 +342,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_start_the_100_flowers_campaign-33873"
-		texturefile = "gfx/interface/goals/GFX_GXC_start_the_100_flowers_campaign-33873.dds"
+		name = "GFX_MON_reaction_to_the_sino_soviet_split-33993"
+		texturefile = "gfx/interface/goals/GFX_MON_reaction_to_the_sino_soviet_split-33993.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_start_the_100_flowers_campaign-33873_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_start_the_100_flowers_campaign-33873.dds"
+		name = "GFX_MON_reaction_to_the_sino_soviet_split-33993_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_reaction_to_the_sino_soviet_split-33993.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_start_the_100_flowers_campaign-33873.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_reaction_to_the_sino_soviet_split-33993.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -364,7 +364,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_start_the_100_flowers_campaign-33873.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_reaction_to_the_sino_soviet_split-33993.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -380,17 +380,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_let_fourth_the_great_proletarian_cultural_revolution-33973"
-		texturefile = "gfx/interface/goals/GFX_GXC_let_fourth_the_great_proletarian_cultural_revolution-33973.dds"
+		name = "GFX_MON_stay_with_leon-52"
+		texturefile = "gfx/interface/goals/GFX_MON_stay_with_leon-52.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_let_fourth_the_great_proletarian_cultural_revolution-33973_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_let_fourth_the_great_proletarian_cultural_revolution-33973.dds"
+		name = "GFX_MON_stay_with_leon-52_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_stay_with_leon-52.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_let_fourth_the_great_proletarian_cultural_revolution-33973.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_stay_with_leon-52.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -402,7 +402,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_let_fourth_the_great_proletarian_cultural_revolution-33973.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_stay_with_leon-52.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -418,17 +418,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_formation_of_the_red_guards-33881"
-		texturefile = "gfx/interface/goals/GFX_GXC_formation_of_the_red_guards-33881.dds"
+		name = "GFX_MON_continue_the_anti_fascist_war-303"
+		texturefile = "gfx/interface/goals/GFX_MON_continue_the_anti_fascist_war-303.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_formation_of_the_red_guards-33881_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_formation_of_the_red_guards-33881.dds"
+		name = "GFX_MON_continue_the_anti_fascist_war-303_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_continue_the_anti_fascist_war-303.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_formation_of_the_red_guards-33881.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_continue_the_anti_fascist_war-303.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -440,7 +440,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_formation_of_the_red_guards-33881.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_continue_the_anti_fascist_war-303.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -456,17 +456,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_politburo_meeting_5-33998"
-		texturefile = "gfx/interface/goals/GFX_GXC_politburo_meeting_5-33998.dds"
+		name = "GFX_MON_world_revolution-88"
+		texturefile = "gfx/interface/goals/GFX_MON_world_revolution-88.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_politburo_meeting_5-33998_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_politburo_meeting_5-33998.dds"
+		name = "GFX_MON_world_revolution-88_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_world_revolution-88.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_politburo_meeting_5-33998.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_world_revolution-88.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -478,7 +478,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_politburo_meeting_5-33998.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_world_revolution-88.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -494,17 +494,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_GXC_follow_stalin-94"
-		texturefile = "gfx/interface/goals/GFX_GXC_follow_stalin-94.dds"
+		name = "GFX_MON_soviet_establishment-42163"
+		texturefile = "gfx/interface/goals/GFX_MON_soviet_establishment-42163.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_GXC_follow_stalin-94_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_follow_stalin-94.dds"
+		name = "GFX_MON_soviet_establishment-42163_shine"
+		texturefile = "gfx/interface/goals/GFX_MON_soviet_establishment-42163.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_follow_stalin-94.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_soviet_establishment-42163.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -516,45 +516,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_follow_stalin-94.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: 
-	SpriteType = { 
-		name = "GFX_GXC_crushing_revisionists-298"
-		texturefile = "gfx/interface/goals/GFX_GXC_crushing_revisionists-298.dds"
-	}
-
-	##Icon Shine For: 
-	SpriteType = { 
-		name = "GFX_GXC_crushing_revisionists-298_shine"
-		texturefile = "gfx/interface/goals/GFX_GXC_crushing_revisionists-298.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_crushing_revisionists-298.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_GXC_crushing_revisionists-298.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MON_soviet_establishment-42163.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

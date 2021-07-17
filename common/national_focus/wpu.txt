@@ -1,0 +1,285 @@
+focus_tree = {
+	id = wpu
+	continuous_focus_position = { x = 100 y = 2000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MON
+		}
+	}
+	#Glory to the Generalissimus
+	focus = {
+		id = MON_glory_to_the_generalissimus
+		icon = GFX_MON_glory_to_the_generalissimus-94
+		x = 3
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#New Discord Tech
+	focus = {
+		id = MON_new_discord_tech
+		icon = GFX_focus_research
+		x = 2
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MON_nuclear_development_program  }
+	}
+
+	#Forming the WLA
+	focus = {
+		id = MON_forming_the_wla
+		icon = GFX_MON_forming_the_wla-42168
+		x = 1
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = MON_glory_to_the_generalissimus  }
+	}
+
+	#Our Influence Abroad
+	focus = {
+		id = MON_our_influence_abroad
+		icon = GFX_MON_our_influence_abroad-42164
+		x = 5
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MON_glory_to_the_generalissimus  }
+	}
+
+	#Arming the Masses
+	focus = {
+		id = MON_arming_the_masses
+		icon = GFX_focus_por_workers_of_iberia
+		x = 0
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = MON_forming_the_wla  }
+	}
+
+	#Nuclear Development Program
+	focus = {
+		id = MON_nuclear_development_program
+		icon = GFX_MON_nuclear_development_program-422
+		x = 2
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MON_forming_the_wla  }
+	}
+
+	#Forming the Proletarian Alliance
+	focus = {
+		id = MON_forming_the_proletarian_alliance
+		icon = GFX_MON_forming_the_proletarian_alliance-42155
+		x = 4
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = MON_our_influence_abroad  }
+	}
+
+	#Joining the Warsaw Pact
+	focus = {
+		id = MON_joining_the_warsaw_pact
+		icon = GFX_MON_joining_the_warsaw_pact-42166
+		x = 6
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_our_influence_abroad  }
+	}
+
+	#The Great Purge of Gramscites
+	focus = {
+		id = MON_the_great_purge_of_gramscites
+		icon = GFX_MON_the_great_purge_of_gramscites-40086
+		x = 0
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_arming_the_masses  }
+	}
+
+	#Criticism MorSoc
+	focus = {
+		id = MON_criticism_morsoc
+		icon = GFX_MON_criticism_morsoc-42165
+		x = 4
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_forming_the_proletarian_alliance  }
+	}
+
+	#Anti Fascist War
+	focus = {
+		id = MON_anti_fascist_war
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 6
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_joining_the_warsaw_pact  }
+	}
+
+	#Grand Victory!
+	focus = {
+		id = MON_grand_victory
+		icon = GFX_MON_grand_victory-39893
+		x = 3
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_new_discord_tech  } prerequisite = { focus = MON_the_great_purge_of_gramscites  } prerequisite = { focus = MON_criticism_morsoc  } prerequisite = { focus = MON_anti_fascist_war  }
+	}
+
+	#Reaction to the Sino Soviet Split
+	focus = {
+		id = MON_reaction_to_the_sino_soviet_split
+		icon = GFX_MON_reaction_to_the_sino_soviet_split-33993
+		x = 3
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_grand_victory  }
+	}
+
+	#Our Own Split
+	focus = {
+		id = MON_our_own_split
+		icon = GFX_focus_attack_soviet
+		x = 2
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_reaction_to_the_sino_soviet_split  }
+		mutually_exclusive = { focus = MON_stay_with_leon  }
+	}
+
+	#Stay with Leon
+	focus = {
+		id = MON_stay_with_leon
+		icon = GFX_MON_stay_with_leon-52
+		x = 4
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_reaction_to_the_sino_soviet_split  }
+		mutually_exclusive = { focus = MON_our_own_split  }
+	}
+
+	#Formalize the PA
+	focus = {
+		id = MON_formalize_the_pa
+		icon = GFX_goal_generic_major_alliance
+		x = 2
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_our_own_split  }
+	}
+
+	#Continue the Anti Fascist War
+	focus = {
+		id = MON_continue_the_anti_fascist_war
+		icon = GFX_MON_continue_the_anti_fascist_war-303
+		x = 4
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_stay_with_leon  }
+	}
+
+	#One True Union
+	focus = {
+		id = MON_one_true_union
+		icon = GFX_focus_ger_strike_at_the_source
+		x = 2
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_formalize_the_pa  }
+	}
+
+	#World Revolution
+	focus = {
+		id = MON_world_revolution
+		icon = GFX_MON_world_revolution-88
+		x = 4
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_continue_the_anti_fascist_war  }
+	}
+
+	#Soviet Establishment
+	focus = {
+		id = MON_soviet_establishment
+		icon = GFX_MON_soviet_establishment-42163
+		x = 2
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_one_true_union  }
+	}
+
+	#Socialist World
+	focus = {
+		id = MON_socialist_world
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 4
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MON_world_revolution  }
+	}
+
+}
