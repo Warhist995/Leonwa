@@ -1,0 +1,276 @@
+focus_tree = {
+	id = ger
+	continuous_focus_position = { x = 0 y = 2000 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+	#Fascist Economics
+	focus = {
+		id = GER_fascist_economics
+		icon = GFX_focus_ger_reichskommisariats
+		x = 9
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_brown_eagle  }
+	}
+
+	#Purging Communism
+	focus = {
+		id = GER_purging_communism
+		icon = GFX_goal_anti_comintern_pact
+		x = 7
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_brown_eagle  }
+	}
+
+	#The Eagle Rises
+	focus = {
+		id = GER_the_eagle_rises
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 5
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Monarchy
+	focus = {
+		id = GER_monarchy
+		icon = GFX_focus_ger_return_of_the_kaiser
+		x = 3
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_eagle_rises  }
+		mutually_exclusive = { focus = GER_the_brown_eagle  }
+	}
+
+	#The Brown Eagle
+	focus = {
+		id = GER_the_brown_eagle
+		icon = GFX_GER_the_brown_eagle-428
+		x = 7
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_eagle_rises  }
+		mutually_exclusive = { focus = GER_monarchy  }
+		completion_reward = {
+			set_politics = { ruling_party = fascism 
+			}
+		}
+	}
+
+	#The Keitel Aristocracy
+	focus = {
+		id = GER_the_keitel_aristocracy
+		icon = GFX_focus_generic_monarchy_2
+		x = 3
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_monarchy  }
+	}
+
+	#The Royal Economy
+	focus = {
+		id = GER_the_royal_economy
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 1
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_monarchy  }
+	}
+
+	#Banning Liberalism
+	focus = {
+		id = GER_banning_liberalism
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 7
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_purging_communism  }
+	}
+
+	#New Civilian Projects
+	focus = {
+		id = GER_new_civilian_projects
+		icon = GFX_focus_generic_industry_2
+		x = 9
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_fascist_economics  }
+	}
+
+	#Berlin University
+	focus = {
+		id = GER_berlin_university
+		icon = GFX_focus_research
+		x = 9
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GER_new_civilian_projects  }
+	}
+
+	#Smash the Crown
+	focus = {
+		id = GER_smash_the_crown
+		icon = GFX_focus_rom_abdicate
+		x = 7
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_banning_liberalism  }
+	}
+
+	#The Golden Purge
+	focus = {
+		id = GER_the_golden_purge
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 3
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_keitel_aristocracy  }
+	}
+
+	#The Nobles Plan
+	focus = {
+		id = GER_the_nobles_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 1
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_the_royal_economy  }
+	}
+
+	#Further Education
+	focus = {
+		id = GER_further_education
+		icon = GFX_focus_research2
+		x = 1
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = GER_the_nobles_plan  }
+	}
+
+	#Destroy the Red Star
+	focus = {
+		id = GER_destroy_the_red_star
+		icon = GFX_focus_ger_bulwark_against_bolshevism
+		x = 3
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_the_golden_purge  }
+	}
+
+	#Arms of the Chimneys
+	focus = {
+		id = GER_arms_of_the_chimneys
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 1
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_further_education  }
+	}
+
+	#Keitelism Under the Crown
+	focus = {
+		id = GER_keitelism_under_the_crown
+		icon = GFX_GER_keitelism_under_the_crown-279
+		x = 3
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_destroy_the_red_star  } prerequisite = { focus = GER_arms_of_the_chimneys  }
+	}
+
+	#Militarized Economy
+	focus = {
+		id = GER_militarized_economy
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 9
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GER_berlin_university  }
+	}
+
+	#National Keitelism
+	focus = {
+		id = GER_national_keitelism
+		icon = GFX_GER_national_keitelism-283
+		x = 7
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_smash_the_crown  } prerequisite = { focus = GER_militarized_economy  }
+	}
+
+	#Glory to Die Authoritat!
+	focus = {
+		id = GER_glory_to_die_authoritat
+		icon = GFX_GER_glory_to_die_authoritat-290
+		x = 5
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GER_keitelism_under_the_crown  focus = GER_national_keitelism  }
+	}
+
+}

@@ -18,8 +18,17 @@ set_popularities = {
 
 create_faction = "Warsaw Pact"
 add_to_faction = SOV
-add_to_faction = PRC
+add_to_faction = NEP
 add_to_faction = MON
+add_to_faction = ROM
+add_to_faction = BUL
+add_to_faction = VIN
+add_to_faction = ALB
+add_to_faction = SLV
+add_to_faction = SHX
+add_to_faction = GXC
+add_to_faction = TUR
+
 
 
 
@@ -35,11 +44,11 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Konstantin Rodzaevsky"
+	name = "Grand Mufti Yusuf"
 	desc = "-"
-	picture = "-"
+	picture = "Portrait_SOV_yusuf.dds"
 	expire = "1953.3.1"
-	ideology = fascism_ideology
+	ideology = centrism
 	traits = {
 		
 	}

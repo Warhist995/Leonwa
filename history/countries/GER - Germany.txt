@@ -10,7 +10,11 @@ set_convoys = 200
 set_stability = 0.75 
 set_war_support = 0.3
 
-
+set_autonomy = {
+		target = RAJ
+		autonomous_state = autonomy_colony
+		freedom_level = 0.35
+	}
 
 set_politics = {
 	ruling_party = neutrality
@@ -25,13 +29,18 @@ set_popularities = {
 	communism = 0
 }
 
-create_faction = Berlin Pact
+create_faction = "Berlin Pact"
 add_to_faction = GER
+add_to_faction = ITA
+add_to_faction = SWE
+add_to_faction = JAP
+add_to_faction = RAJ
+add_to_faction = SIA
 
 
 
 create_country_leader = {
-	name = "Wilhelm Keitel"
+	name = "Wilhelm Keitel(tag keeps changing)"
 	desc = "-"
 	picture = "Portrait_GER_Wilhelm Keitel.dds"
 	expire = "1965.1.1"
@@ -41,7 +50,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Vladimir Makarov"
+	name = "Erich Honecker#9437"
 	desc = "-"
 	picture = "-"
 	expire = "1965.1.1"

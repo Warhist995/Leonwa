@@ -13,19 +13,17 @@ focus_tree = {
 		id = FRA_develop_the_republic
 		icon = GFX_FRA_develop_the_republic-33347
 		x = 3
-		y = 1
+		y = 0
 		cost = 4
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
+		mutually_exclusive = { focus = FRA_revolution_once_and_forever  }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			add_manpower = 8000
 			
-			country_event = {
-			days = 1 
-			id = finland.1 
-			}
+			
 			
 		}
 	}
@@ -43,9 +41,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_develop_the_republic  }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_stability = 0.05
-			
-			add_political_power = 50
+			
 			
 		}
 	}
@@ -91,11 +87,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_develop_the_republic  }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_tech_bonus = {
-			 bonus = 0.5 
-			uses = 2 
-			category = radar_tech 
-			}
+			
 			
 		}
 	}
@@ -146,11 +138,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			
-			add_tech_bonus = {
-			 bonus = 0.5 
-			uses = 2 
-			category = radar_tech 
-			}
+			
 			
 		}
 	}
@@ -195,12 +183,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_democracy_at_its_best  }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
-			add_tech_bonus = {
-			 bonus = 0.5 
-			uses = 2 
-			category = radar_tech 
-			}
-			add_political_power = 100
+			
 			
 		}
 	}
@@ -217,11 +200,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = FRA_create_france_tv  }
 		completion_reward = {
-			add_building_construction = { 
-			type = bunker 
-			province = 5291 
-			level = 2 
-			instant_build = yes }
 			
 		}
 	}
@@ -230,8 +208,8 @@ focus_tree = {
 	focus = {
 		id = FRA_centralized_economy
 		icon = GFX_focus_generic_soviet_politics
-		x = 11
-		y = 8
+		x = 13
+		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -247,8 +225,8 @@ focus_tree = {
 	focus = {
 		id = FRA_decentralised_economy
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 9
-		y = 8
+		x = 11
+		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -267,8 +245,8 @@ focus_tree = {
 	focus = {
 		id = FRA_independent_socialism
 		icon = GFX_focus_eng_liberate_the_home_of_marx
-		x = 11
-		y = 10
+		x = 13
+		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -281,16 +259,24 @@ focus_tree = {
 	focus = {
 		id = FRA_revolution_once_and_forever
 		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
-		x = 10
-		y = 6
+		x = 12
+		y = 0
 		cost = 1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		mutually_exclusive = { focus = FRA_develop_the_republic  }
+		completion_reward = {
+				set_politics = { ruling_party = communism 
+				}
+				
+				add_popularity = { ideology = communism popularity = 0.5 
+				}
+			}
 		available = {
 			available = {
-			  has_country_flag = revolution
-			}
+			  has_country_flag = something_something
+			}		
 			
 		}
 	}
@@ -299,8 +285,8 @@ focus_tree = {
 	focus = {
 		id = FRA_siding_with_syndicalism
 		icon = GFX_FRA_siding_with_syndicalism-34382
-		x = 8
-		y = 7
+		x = 10
+		y = 1
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -313,8 +299,8 @@ focus_tree = {
 	focus = {
 		id = FRA_swinging_to_the_communists
 		icon = GFX_FRA_swinging_to_the_communists-34384
-		x = 12
-		y = 7
+		x = 13
+		y = 1
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -327,8 +313,8 @@ focus_tree = {
 	focus = {
 		id = FRA_federation_democracy
 		icon = GFX_FRA_federation_democracy-34389
-		x = 7
-		y = 8
+		x = 9
+		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -344,8 +330,8 @@ focus_tree = {
 	focus = {
 		id = FRA_true_marxism
 		icon = GFX_FRA_true_marxism-34390
-		x = 13
-		y = 8
+		x = 15
+		y = 2
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -363,8 +349,8 @@ focus_tree = {
 	focus = {
 		id = FRA_allow_liberalism
 		icon = GFX_focus_generic_strike_at_democracy2
-		x = 7
-		y = 9
+		x = 9
+		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -387,8 +373,8 @@ focus_tree = {
 	focus = {
 		id = FRA_communal_research
 		icon = GFX_goal_continuous_research
-		x = 9
-		y = 9
+		x = 11
+		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
@@ -404,8 +390,8 @@ focus_tree = {
 	focus = {
 		id = FRA_anti_fascist_front
 		icon = GFX_focus_generic_anti_fascist_diplomacy
-		x = 13
-		y = 9
+		x = 15
+		y = 3
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -423,8 +409,8 @@ focus_tree = {
 	focus = {
 		id = FRA_socialist_construction
 		icon = GFX_FRA_socialist_construction-424
-		x = 11
-		y = 9
+		x = 13
+		y = 3
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -440,8 +426,8 @@ focus_tree = {
 	focus = {
 		id = FRA_siding_with_leon
 		icon = GFX_FRA_siding_with_leon-52
-		x = 9
-		y = 10
+		x = 11
+		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -454,8 +440,8 @@ focus_tree = {
 	focus = {
 		id = FRA_our_own_way
 		icon = GFX_focus_generic_socialist_science
-		x = 7
-		y = 10
+		x = 9
+		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -463,7 +449,7 @@ focus_tree = {
 		prerequisite = { focus = FRA_allow_liberalism  } prerequisite = { focus = FRA_communal_research  }
 		mutually_exclusive = { focus = FRA_siding_with_leon  }
 		completion_reward = {
-			create_faction = 'Syndical Nationale'
+			create_faction = "Syndical National"
 			
 		}
 	}
@@ -472,8 +458,8 @@ focus_tree = {
 	focus = {
 		id = FRA_leonist_alignment
 		icon = GFX_FRA_leonist_alignment-52
-		x = 13
-		y = 10
+		x = 15
+		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL

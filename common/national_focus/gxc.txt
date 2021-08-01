@@ -88,6 +88,15 @@ focus_tree = {
 		}
 		prerequisite = { focus = GXC_open_up_the_party_congress  }
 		mutually_exclusive = { focus = GXC_the_way_of_chairman_mao  }
+		completion_reward = {
+		country_event = {
+			id = guangxi.china.3
+			days = 1
+			random = 5
+			random_days = 1
+			}
+		
+		}
 	}
 
 	#The Way of Chairman Mao
@@ -414,6 +423,12 @@ focus_tree = {
 				}
 				set_state_flag = royal_ordinance_focus_2AF
 			}
+			country_event = {
+			id = guangxi.china.1
+			days = 1
+			random = 5
+			random_days = 1
+			}
 		}
 	}
 
@@ -596,7 +611,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = GXC_let_fourth_the_great_proletarian_cultural_revolution  }
 		completion_reward = {
-			add_political_power = 100
+			add_political_power = 100			country_event = {
+			id = guangxi.china.2
+			days = 1
+			random = 5
+			random_days = 1
+			}
 			
 		}
 	}

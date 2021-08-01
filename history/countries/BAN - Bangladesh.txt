@@ -1,0 +1,39 @@
+﻿capital = 430
+
+#oob = ""
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = communism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	communism = 77
+	fascism = 0
+	democratic = 0
+	neutrality = 23
+}
+
+create_country_leader = {
+	
+	name = "Nico"
+	picture = "Portrait_BAN_nico.dds"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+		#
+	}
+}
+
+
+}
+
+

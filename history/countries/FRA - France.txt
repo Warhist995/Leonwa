@@ -24,7 +24,7 @@ add_ideas = {
 }
 
 create_country_leader = {
-	name = "Resprune Chamberlain"
+	name = "Resprune#4334"
 	desc = "-"
 	picture = "Portrait_FRA_Resprune.dds"
 	expire = "1965.1.1"
@@ -35,7 +35,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "NezoGG"
+	name = "NezoGG#0995"
 	desc = "-"
 	picture = "Portrait_FRA_Nezo.dds"
 	expire = "1965.1.1"

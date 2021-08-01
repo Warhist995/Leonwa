@@ -1,0 +1,11 @@
+spriteTypes = {	
+	SpriteType = {
+		name = "GFX_idea_revisionist_hunt"
+		texturefile = "gfx/interface/ideas/gxc_anti_revisionists_gpcr.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_reactionary_hunt"
+		texturefile = "gfx/interface/ideas/gxc_anti_reactionary_gpcr.dds"	
+	}
+}

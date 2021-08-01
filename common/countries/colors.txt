@@ -194,8 +194,8 @@ MEX = {
 	color_ui = rgb { 135 198 108 }
 }
 NEP = {
-	color = rgb { 152 130 191 }
-	color_ui = rgb { 198 169 248 }
+	color = rgb { 134 12 12 }
+	color_ui = rgb { 134 12 12 }
 }
 NIC = {
 	color = rgb { 146 179 191 }
@@ -411,6 +411,11 @@ CAM = {
 MAL = {
 	color = rgb { 197  96  100 }
 	color_ui = rgb { 213  169  121 }
+}
+
+BAN = {
+	color = rgb { 255 41 41 }
+	color_ui = rgb {255 41 41 }
 }
 
 MNT = {

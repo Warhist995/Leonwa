@@ -1,0 +1,8 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_cultural_revolution_event_image"
+		texturefile = "gfx/event_pictures/guangxi.dds"
+	}
+
+}

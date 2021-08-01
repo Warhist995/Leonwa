@@ -228,4 +228,524 @@ focus_tree = {
 		prerequisite = { focus = SOV_effective_conscription  } prerequisite = { focus = SOV_the_state_is_great  }
 	}
 
+	#May Constitution
+	focus = {
+		id = SOV_may_constitution
+		icon = GFX_SOV_may_constitution-46748
+		x = 13
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_father_of_the_nation  }
+	}
+
+	#Father of the Nation
+	focus = {
+		id = SOV_father_of_the_nation
+		icon = GFX_SOV_father_of_the_nation-431
+		x = 13
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Principle of Internationalism
+	focus = {
+		id = SOV_principle_of_internationalism
+		icon = GFX_focus_ger_great_red_menace
+		x = 13
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_first_national_congress  }
+	}
+
+	#Autocratic Hold
+	focus = {
+		id = SOV_autocratic_hold
+		icon = GFX_goal_generic_political_pressure
+		x = 10
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_may_constitution  }
+		mutually_exclusive = { focus = SOV_first_national_congress  } mutually_exclusive = { focus = SOV_total_democracy  }
+	}
+
+	#First National Congress
+	focus = {
+		id = SOV_first_national_congress
+		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
+		x = 13
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_may_constitution  }
+		mutually_exclusive = { focus = SOV_autocratic_hold  } mutually_exclusive = { focus = SOV_total_democracy  }
+	}
+
+	#Total Democracy
+	focus = {
+		id = SOV_total_democracy
+		icon = GFX_SOV_total_democracy-427
+		x = 17
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_may_constitution  }
+		mutually_exclusive = { focus = SOV_first_national_congress  } mutually_exclusive = { focus = SOV_autocratic_hold  }
+	}
+
+	#Devolve into Anarchy
+	focus = {
+		id = SOV_devolve_into_anarchy
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 17
+		y = 3
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_total_democracy  }
+	}
+
+	#Socialism in one Nation
+	focus = {
+		id = SOV_socialism_in_one_nation
+		icon = GFX_goal_generic_defence
+		x = 10
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_autocratic_hold  }
+	}
+
+	#Nationalist Fervor
+	focus = {
+		id = SOV_nationalist_fervor
+		icon = GFX_SOV_nationalist_fervor-149
+		x = 10
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_socialism_in_one_nation  }
+	}
+
+	#Form the Global Council
+	focus = {
+		id = SOV_form_the_global_council
+		icon = GFX_focus_BUL_support_macedonian_organizations
+		x = 13
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_principle_of_internationalism  }
+	}
+
+	#Freedom, Equality and Individualism
+	focus = {
+		id = SOV_freedom_equality_and_individualism
+		icon = GFX_SOV_freedom_equality_and_individualism-88
+		x = 17
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_devolve_into_anarchy  }
+	}
+
+	#Support Revolutionaries in Austria
+	focus = {
+		id = SOV_support_revolutionaries_in_austria
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 12
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SOV_form_the_global_council  }
+	}
+
+	#Sino-Soviet Alliance
+	focus = {
+		id = SOV_sinosoviet_alliance
+		icon = GFX_focus_chi_cooperation_with_the_communists
+		x = 14
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_increase_relations_with_china  }
+	}
+
+	#Increase relations with China
+	focus = {
+		id = SOV_increase_relations_with_china
+		icon = GFX_focus_chi_one_china_policy
+		x = 14
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_form_the_global_council  }
+	}
+
+	#Support Revolutionaries in Osmania
+	focus = {
+		id = SOV_support_revolutionaries_in_osmania
+		icon = GFX_focus_TUR_misak_i_milli
+		x = 12
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SOV_support_revolutionaries_in_austria  }
+	}
+
+	#Invade Monarchist Cuba
+	focus = {
+		id = SOV_invade_monarchist_cuba
+		icon = GFX_focus_focus_fra_maquis
+		x = 12
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = SOV_support_revolutionaries_in_osmania  }
+	}
+
+	#Develop Chinese Industry
+	focus = {
+		id = SOV_develop_chinese_industry
+		icon = GFX_SOV_develop_chinese_industry-424
+		x = 14
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_sinosoviet_alliance  }
+	}
+
+	#Form the Communist International
+	focus = {
+		id = SOV_form_the_communist_international
+		icon = GFX_focus_spr_anarchism_knows_no_borders
+		x = 13
+		y = 8
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_invade_monarchist_cuba  } prerequisite = { focus = SOV_develop_chinese_industry  }
+	}
+
+	#The Coup
+	focus = {
+		id = SOV_the_coup
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 22
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		
+		available = {
+		has_government = neutrality / has_government = ROOT
+		}
+	}
+
+	#Islamists Rule Supreme
+	focus = {
+		id = SOV_islamists_rule_supreme
+		icon = GFX_SOV_islamists_rule_supreme-320
+		x = 21
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		has_government = neutrality / has_government = SOV
+		}
+		prerequisite = { focus = SOV_the_coup  }
+		mutually_exclusive = { focus = SOV_a_new_regime  }
+	}
+
+	#A New Regime
+	focus = {
+		id = SOV_a_new_regime
+		icon = GFX_SOV_a_new_regime-144
+		x = 23
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+		has_government = communism / has_government = SOV
+		}
+		prerequisite = { focus = SOV_the_coup  }
+		mutually_exclusive = { focus = SOV_islamists_rule_supreme  }
+	}
+
+	#Economic Renewal
+	focus = {
+		id = SOV_economic_renewal
+		icon = GFX_SOV_economic_renewal-44550
+		x = 23
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_a_new_regime  }
+	}
+
+	#Moralistic Socialism to a new level.
+	focus = {
+		id = SOV_moralistic_socialism_to_a_new_level
+		icon = GFX_focus_generic_treaty
+		x = 21
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_islamists_rule_supreme  }
+	}
+
+	#Political Reform
+	focus = {
+		id = SOV_political_reform
+		icon = GFX_focus_generic_soviet_politics
+		x = 25
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_a_new_regime  }
+	}
+
+	#Expansion Campaign
+	focus = {
+		id = SOV_expansion_campaign
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		x = 19
+		y = 2
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_islamists_rule_supreme  }
+	}
+
+	#Claiming the Straits
+	focus = {
+		id = SOV_claiming_the_straits
+		icon = GFX_SOV_claiming_the_straits-317
+		x = 19
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_expansion_campaign  }
+	}
+
+	#Crushing Degeneracy
+	focus = {
+		id = SOV_crushing_degeneracy
+		icon = GFX_SOV_crushing_degeneracy-40086
+		x = 21
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_moralistic_socialism_to_a_new_level  }
+	}
+
+	#The 1st Bragov Plan
+	focus = {
+		id = SOV_the_1st_bragov_plan
+		icon = GFX_focus_generic_industry_1
+		x = 23
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_economic_renewal  }
+	}
+
+	#The Star Shines
+	focus = {
+		id = SOV_the_star_shines
+		icon = GFX_SOV_the_star_shines-46829
+		x = 25
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_political_reform  }
+	}
+
+	#Southern Expansion
+	focus = {
+		id = SOV_southern_expansion
+		icon = GFX_goal_generic_major_war
+		x = 19
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_claiming_the_straits  }
+	}
+
+	#Shariah Law
+	focus = {
+		id = SOV_shariah_law
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 21
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_crushing_degeneracy  }
+	}
+
+	#Moscow University
+	focus = {
+		id = SOV_moscow_university
+		icon = GFX_focus_research2
+		x = 23
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_the_1st_bragov_plan  }
+	}
+
+	#The New Purge
+	focus = {
+		id = SOV_the_new_purge
+		icon = GFX_SOV_the_new_purge-422
+		x = 25
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_the_star_shines  }
+	}
+
+	#Saving Mecca
+	focus = {
+		id = SOV_saving_mecca
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 19
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_southern_expansion  }
+	}
+
+	#Uniting the Muslim World
+	focus = {
+		id = SOV_uniting_the_muslim_world
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 21
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_shariah_law  }
+	}
+
+	#The 2nd Bragov Plan
+	focus = {
+		id = SOV_the_2nd_bragov_plan
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 23
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_moscow_university  }
+	}
+
+	#Found a New Alliance
+	focus = {
+		id = SOV_found_a_new_alliance
+		icon = GFX_SOV_found_a_new_alliance-52
+		x = 25
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_the_new_purge  }
+	}
+
+	#The Caliphate Reborn
+	focus = {
+		id = SOV_the_caliphate_reborn
+		icon = GFX_focus_TUR_pivot_to_the_past
+		x = 20
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_saving_mecca  } prerequisite = { focus = SOV_uniting_the_muslim_world  }
+	}
+
+	#The True Soviet Union
+	focus = {
+		id = SOV_the_true_soviet_union
+		icon = GFX_SOV_the_true_soviet_union-42163
+		x = 24
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_the_2nd_bragov_plan  } prerequisite = { focus = SOV_found_a_new_alliance  }
+	}
+
 }

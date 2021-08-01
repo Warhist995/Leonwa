@@ -26,8 +26,12 @@ set_popularities = {
 	communism = 100
 }
 
+add_ideas = {
+
+}
+
 create_country_leader = {
-	name = "Wang Ming"
+	name = "Wang Ming#6100"
 	desc = "-"
 	picture = "Portrait_GXC_Wang_ming.dds"
 	expire = "1965.1.1"

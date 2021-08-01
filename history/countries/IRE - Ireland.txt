@@ -21,7 +21,7 @@ set_popularities = {
 
 
 create_country_leader = {
-	name = "Shchors"
+	name = "Shchors#2997"
 	desc = "-"
 	picture = "Portrait_IRE_shchors.dds"
 	expire = "1965.1.1"

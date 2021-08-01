@@ -48,7 +48,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Sage Keitel"
+	name = "Sage#4600"
 	desc = "-"
 	picture = "Portrait_JAP_Sage.dds"
 	expire = "1989.1.1"

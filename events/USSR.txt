@@ -1,0 +1,104 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = soviet.russia
+
+# Japanese Stage Border Incident
+country_event = {
+	id = soviet.russia.1
+	title = "Suspicious Meeting"
+	desc =  soviet.russia.1.d
+	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { # Investigate It
+		name = "Investigate It"
+		ai_chance = { factor = 90 }
+	}
+	option = { # Leave it be, its probably nothing
+		name = "Leave it be, its probably nothing."
+		ai_chance = { factor = 10 }
+			country_event = {
+			id = soviet.russia.2
+			days = 3
+			random = 1
+			random_days = 2
+		}
+		
+	}	
+}
+
+country_event = {
+	id = soviet.russia.2
+	title = "Kerikov Spies Caught "
+	desc = soviet.russia.2.d
+	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { # Investigate It
+		name = "This goes deeper"
+		ai_chance = { factor = 90 }
+	}
+	option = { # Leave it be, its probably nothing
+		name = "Pity how they fail, they'll never get passed us."
+		ai_chance = { factor = 10 }
+		country_event = {
+			id = soviet.russia.3
+			days = 3
+			random = 1
+			random_days = 2
+		}
+		
+	}	
+}
+
+country_event = {
+	id = soviet.russia.3
+	title = "Guns At the Meeting"
+	desc = soviet.russia.3.d
+	picture = 
+	
+	is_triggered_only = yes
+	
+	option = { # Investigate It
+		name = "Leon is Shot The USSR is toppled"
+		ai_chance = { factor = 90 }
+		set_politics = { ruling_party = neutrality 
+		}
+		dismantle_faction = yes
+		complete_national_focus = SOV_the_coup
+			kill_ideology_leader = communism
+			
+			
+			set_political_party = {
+			ideology = neutrality
+			popularity = 50
+		}
+		set_party_name = { 
+			ideology = communism
+			long_name = SOV_communism_party_kerikov_long 
+			name = SOV_communism_party_kerikov 
+		}	
+		
+			create_country_leader = {
+			name = "Bragov"
+			desc = "-"
+			picture = "Portrait_SOV_bragov.dds"
+			expire = "1965.1.1"
+			ideology = marxism
+			traits = {
+				
+			}
+		}
+	}
+	option = { # Leave it be, its probably nothing
+		name = "Leon survives and slays Bragov and Yusuf"
+		ai_chance = { factor = 10 }
+		
+	}	
+}
+
+

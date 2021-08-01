@@ -1,0 +1,13 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_cultural_revolution_event_image"
+		texturefile = "gfx/event_pictures/Guangxi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_PRC_Proclaiming_event_image"
+		texturefile = "gfx/event_pictures/proclaim_prc.dds"
+	}
+
+}

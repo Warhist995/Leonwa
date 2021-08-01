@@ -43,7 +43,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "DAMNSON"
+	name = "DAMNSON 2.0 (Left Discord)#6047"
 	desc = ""
 	picture = "Portrait_KOR_DAMNSON.dds"
 	expire = "1965.1.1"
