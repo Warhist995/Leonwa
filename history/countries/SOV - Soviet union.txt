@@ -16,6 +16,12 @@ set_popularities = {
 	communism = 100
 }
 
+set_autonomy = {
+		target = AZR
+		autonomous_state = autonomy_collaboration_government
+		freedom_level = 0.25
+	}
+
 create_faction = "Warsaw Pact"
 add_to_faction = SOV
 add_to_faction = NEP
@@ -28,8 +34,14 @@ add_to_faction = SLV
 add_to_faction = SHX
 add_to_faction = GXC
 add_to_faction = TUR
+add_to_faction = HUN
+add_to_faction = AZR
 
+add_ideas = {
+under_developed_lands
+revolutionary_fervor
 
+}
 
 
 create_country_leader = {

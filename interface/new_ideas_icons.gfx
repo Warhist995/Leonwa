@@ -8,4 +8,16 @@ spriteTypes = {
 		name = "GFX_idea_reactionary_hunt"
 		texturefile = "gfx/interface/ideas/gxc_anti_reactionary_gpcr.dds"	
 	}
+	
+	SpriteType = {
+		name = "GFX_idea_under_dev_land"
+		texturefile = "gfx/interface/goals/sov_land_probs.dds"	
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_revolution_fervor"
+		texturefile = "gfx/interface/goals/sov_revolutionary.dds"	
+	}
+	
+	
 }

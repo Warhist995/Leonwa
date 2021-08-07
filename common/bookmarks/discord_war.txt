@@ -1,0 +1,122 @@
+bookmarks = {
+	bookmark = {
+		name = "LEON_WAR_NAME"
+		desc = "LEON_WAR_BOOKMARK_LOC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "SOV"
+		default = yes
+		
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+						
+			}
+			focuses = {
+			SOV_rise_of_moscow
+			SOV_father_of_the_nation
+			SOV_the_coup
+			}
+		}
+		
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+						
+			}
+			focuses = {
+			GER_monarchy
+			GER_the_brown_eagle
+			GER_glory_to_die_authoritat
+			}
+		}
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+						
+			}
+			focuses = {
+			
+			}
+		}
+		
+		"GXC"={
+			history = "GXC_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+						
+			}
+			focuses = {
+			GXC_chinas_red_banner
+			GXC_the_way_of_chairman_mao
+			GXC_same_old_same_old
+			}
+		}
+		
+		"MON"={
+			history = "MON_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+						
+			}
+			focuses = {
+			MON_forming_the_wla
+			MON_soviet_establishment
+			MON_glory_to_the_generalissimus
+			}
+		}
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+						
+			}
+			focuses = {
+			FRA_develop_the_republic
+			FRA_develop_the_eu
+			FRA_revolution_once_and_forever
+			}
+		}
+		
+		
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		"JAP"={
+			minor = yes
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+						
+			}
+			focuses = {
+			JAP_develop_the_republic
+			JAP_found_the_kyoto_pact
+			JAP_found_the_sco
+			}
+		}
+		
+
+
+
+
+
+
+
+
+		
+		
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

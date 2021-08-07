@@ -1,28 +1,31 @@
 
 state={
-	id=455
-	name="STATE_455"
-	manpower = 932000
+	id=293
+	name="STATE_293"
+	manpower = 2489500
 	
 	state_category = rural
-
+	
+	resources={
+		oil=1 # was: 1
+	}
 	history={
 		owner = SAU
 		buildings = {
 			infrastructure = 3
+			arms_factory = 1
 			industrial_complex = 1
+			10840 = {
+				naval_base = 1
+			}
 		}
 		victory_points = {
-			7151 1 
+			10840 3 
 		}
-		victory_points = {
-			11976 1 
-		}
-
 		add_core_of = SAU
 	}
 
 	provinces={
-		1544 4017 4115 4440 4562 4574 4591 4603 7001 7151 7170 10089 11976 
+		1920 1973 4924 10752 10840 
 	}
 }

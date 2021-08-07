@@ -1,21 +1,27 @@
 ﻿###########################
-# Chinese Events
+# Russia Events
 ###########################
 
 add_namespace = soviet.russia
 
-# Japanese Stage Border Incident
+
 country_event = {
 	id = soviet.russia.1
 	title = "Suspicious Meeting"
 	desc =  soviet.russia.1.d
-	picture = 
+	picture = "-"
 	
 	is_triggered_only = yes
 	
 	option = { # Investigate It
 		name = "Investigate It"
 		ai_chance = { factor = 90 }
+		complete_national_focus = SOV_freedomequalityandindividualism
+		country_event = {
+			id = soviet.russia.4
+			days = 3
+		
+		}
 	}
 	option = { # Leave it be, its probably nothing
 		name = "Leave it be, its probably nothing."
@@ -23,8 +29,7 @@ country_event = {
 			country_event = {
 			id = soviet.russia.2
 			days = 3
-			random = 1
-			random_days = 2
+			
 		}
 		
 	}	
@@ -34,13 +39,19 @@ country_event = {
 	id = soviet.russia.2
 	title = "Kerikov Spies Caught "
 	desc = soviet.russia.2.d
-	picture = 
+	picture = "-"
 	
 	is_triggered_only = yes
 	
 	option = { # Investigate It
 		name = "This goes deeper"
 		ai_chance = { factor = 90 }
+		complete_national_focus = SOV_freedomequalityandindividualism
+		country_event = {
+			id = soviet.russia.4
+			days = 3
+		
+		}
 	}
 	option = { # Leave it be, its probably nothing
 		name = "Pity how they fail, they'll never get passed us."
@@ -48,8 +59,7 @@ country_event = {
 		country_event = {
 			id = soviet.russia.3
 			days = 3
-			random = 1
-			random_days = 2
+		
 		}
 		
 	}	
@@ -59,7 +69,7 @@ country_event = {
 	id = soviet.russia.3
 	title = "Guns At the Meeting"
 	desc = soviet.russia.3.d
-	picture = 
+	picture = "-"
 	
 	is_triggered_only = yes
 	
@@ -97,8 +107,38 @@ country_event = {
 	option = { # Leave it be, its probably nothing
 		name = "Leon survives and slays Bragov and Yusuf"
 		ai_chance = { factor = 10 }
+		complete_national_focus = SOV_freedomequalityandindividualism
+		country_event = {
+			id = soviet.russia.4
+			days = 3
 		
+		}
 	}	
 }
 
+country_event = {
+	id = soviet.russia.4
+	title = "Fate of the Union"
+	desc = soviet.russia.2.d
+	picture = "-"
+	
+	is_triggered_only = yes
+	
+	option = { # Investigate It
+		name = "Heydar's Rise To Power"
+		ai_chance = { factor = 90 }
+	}
+	option = { # Leave it be, its probably nothing
+		name = "Faded invades Moscow, let his state truly shine!"
+		ai_chance = { factor = 10 }
+		
+		
+	}	
+	option = { # Leave it be, its probably nothing
+		name = "The Dust Has settleed and Wilhelm is our king!"
+		ai_chance = { factor = 10 }
+		
+		
+	}	
+}
 

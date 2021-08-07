@@ -71,4 +71,51 @@ ideas = {
 			army_core_attack_factor = 0.4
 			}
 	}
+	
+	under_developed_lands = {
+		
+			picture = "GFX_idea_under_dev_land"
+			
+			allowed = {
+			tag SOV
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			local_resources = -0.1
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+			line_change_production_efficiency_factor = -0.3
+			}
+	}
+	
+		revolutionary_fervor = {
+		
+			picture = "GFX_idea_revolution_fervor"
+			
+			allowed = {
+			tag SOV
+			}
+			
+			available = {
+			}
+			
+			cancel = {
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			drift_defence_factor = 0.3
+			war_support_factor = 0.1
+			recruitable_population = 0.1
+			}
+	}
 }
